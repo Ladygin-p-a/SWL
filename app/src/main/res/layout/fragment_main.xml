@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:background="@color/fragment_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView1"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/card_color">
+
+                        <ImageView
+                            android:id="@+id/StatusBall"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/grey_ball" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/card_color"
+                            android:text="Кнопка №1"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:shadowColor="#304FFE"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="2"/>
+
+
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:thumb="@drawable/rectangle_thumb"
+                            android:track="@drawable/rectangle_tack"/>
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:background="@drawable/button_style"
+                            android:layout_marginBottom="10dp"
+                            android:elevation="8dp"
+                            android:text="Настройки"
+                            android:textSize="10dp"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/card_color">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/card_color"
+                        android:text="Кнопка №2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#304FFE"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"/>
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:thumb="@drawable/rectangle_thumb"
+                        android:track="@drawable/rectangle_tack"/>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:background="@drawable/button_style"
+                        android:layout_marginBottom="10dp"
+                        android:elevation="8dp"
+                        android:text="Настройки"
+                        android:textSize="10dp"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
